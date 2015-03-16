@@ -1,6 +1,6 @@
-var app = angular.module('app', ['ngMaterial']);
+var app = angular.module('ConsoleApplication', ['ngMaterial']);
 
-app.controller('AppCtrl', ['$scope', '$mdSidenav', function($scope, $mdSidenav){
+app.controller('app', ['$scope', '$mdSidenav', function($scope, $mdSidenav){
     $scope.toggleSidenav = function(menuId) {
         $mdSidenav(menuId).toggle();
     };
