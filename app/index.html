@@ -9,10 +9,10 @@
     <div class="menu" flex="25">
         <md-toolbar>
             <div class="md-toolbar-tools">
-                <span class="md-flex">Connection Information</span>
+                <span class="md-flex">Connection Setup</span>
             </div>
         </md-toolbar>
-        <md-content class="md-padding" layout="row" >
+        <md-content class="md-padding" layout="row" layout-align="space-around center">
             <md-input-container>
                 <label>Hostname</label>
                 <input ng-model="connection.hostname">
@@ -34,11 +34,10 @@
                 <input ng-model="connection.password">
             </md-input-container>
             <md-checkbox ng-model="connection.secure" aria-label="Secure connection">
-                Secure connection
+                Secure
             </md-checkbox>
+            <md-button class="md-raised">Connect</md-button>
         </md-content>
-        <div layout="row">
-        </div>
     </div>
     <div class="content" layout="row" flex>
         <div class="actionPane" layout="column" layout-align="space-around start" flex="15">
