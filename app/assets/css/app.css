@@ -1,3 +1,12 @@
+.body {
+    background-color: red;
+}
+.leftPane {
+    background-color: green;
+}
+.rightPane {
+    background-color: blue;
+}
 .menuBtn {
     background-color: transparent;
     border: none;
