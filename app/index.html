@@ -33,29 +33,65 @@
                 <label>Password</label>
                 <input ng-model="connection.password">
             </md-input-container>
-            <md-checkbox ng-model="connection.secure">Secure</md-checkbox>
-            <md-button class="md-raised">Connect</md-button>
+            <md-checkbox ng-model="connection.secure">
+                <md-tooltip>Enabled TLS</md-tooltip>
+                Secure
+            </md-checkbox>
+            <md-button class="md-raised">
+                <md-tooltip>Connect to the server</md-tooltip>
+                Connect
+            </md-button>
         </md-content>
         <md-content class="md-padding" layout="row" layout-align="space-around center">
             <div>
-                <md-checkbox ng-model="connection.autoconfig">Automatic configuration</md-checkbox>
-                <md-checkbox ng-model="connection.beans">Beans</md-checkbox>
+                <md-checkbox ng-model="connection.autoconfig">
+                    Automatic configuration
+                    <md-tooltip>Auto-configuration report</md-tooltip>
+                </md-checkbox>
+                <md-checkbox ng-model="connection.beans">
+                    Beans
+                    <md-tooltip>List of all the Spring Beans</md-tooltip>
+                </md-checkbox>
             </div>
             <div>
-                <md-checkbox ng-model="connection.configprops">Properties</md-checkbox>
-                <md-checkbox ng-model="connection.dump">Thread Dump</md-checkbox>
+                <md-checkbox ng-model="connection.configprops">
+                    Properties
+                    <md-tooltip>List of all @ConfigurationProperties</md-tooltip>
+                </md-checkbox>
+                <md-checkbox ng-model="connection.dump">
+                    Thread Dump
+                    <md-tooltip>Performs a thread dump</md-tooltip>
+                </md-checkbox>
             </div>
             <div>
-                <md-checkbox ng-model="connection.env">Environment</md-checkbox>
-                <md-checkbox ng-model="connection.health">Health information</md-checkbox>
+                <md-checkbox ng-model="connection.env">
+                    Environment
+                    <md-tooltip>Properties from ConfigurableEnvironment</md-tooltip>
+                </md-checkbox>
+                <md-checkbox ng-model="connection.health">
+                    Health information
+                    <md-tooltip>Application health information</md-tooltip>
+                </md-checkbox>
             </div>
             <div>
-                <md-checkbox ng-model="connection.info">Info</md-checkbox>
-                <md-checkbox ng-model="connection.metrics">Metrics</md-checkbox>
+                <md-checkbox ng-model="connection.info">
+                    Info
+                    <md-tooltip>Arbitrary application info</md-tooltip>
+                </md-checkbox>
+                <md-checkbox ng-model="connection.metrics">
+                    Metrics
+                    <md-tooltip>Shows ‘metrics’ information</md-tooltip>
+                </md-checkbox>
             </div>
             <div>
-                <md-checkbox ng-model="connection.mappings">Resource mappings</md-checkbox>
-                <md-checkbox ng-model="connection.trace">Trace</md-checkbox>
+                <md-checkbox ng-model="connection.mappings">
+                    Resource mappings
+                    <md-tooltip>All @RequestMapping paths</md-tooltip>
+                </md-checkbox>
+                <md-checkbox ng-model="connection.trace">
+                    Trace
+                    <md-tooltip>Trace information</md-tooltip>
+                </md-checkbox>
             </div>
         </md-content>
     </div>
