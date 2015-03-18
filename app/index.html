@@ -6,13 +6,40 @@
     <link rel="stylesheet" href="assets/css/app.css"/>
 </head>
 <body layout="column" ng-controller="app"  layout-margin layout-fill layout-padding>
-    <div class="menu" flex="10">
+    <div class="menu" flex="25">
         <md-toolbar>
-            <div layout="row">
-                <md-button>Button</md-button>
-                <md-button>Button</md-button>
+            <div class="md-toolbar-tools">
+                <span class="md-flex">Connection Information</span>
             </div>
-        </md-toolbar>    </div>
+        </md-toolbar>
+        <md-content class="md-padding" layout="row" >
+            <md-input-container>
+                <label>Hostname</label>
+                <input ng-model="connection.hostname">
+            </md-input-container>
+            <md-input-container>
+                <label>Port</label>
+                <input ng-model="connection.port">
+            </md-input-container>
+            <md-input-container>
+                <label>Context</label>
+                <input ng-model="connection.context">
+            </md-input-container>
+            <md-input-container>
+                <label>Username</label>
+                <input ng-model="connection.username">
+            </md-input-container>
+            <md-input-container>
+                <label>Password</label>
+                <input ng-model="connection.password">
+            </md-input-container>
+            <md-checkbox ng-model="connection.secure" aria-label="Secure connection">
+                Secure connection
+            </md-checkbox>
+        </md-content>
+        <div layout="row">
+        </div>
+    </div>
     <div class="content" layout="row" flex>
         <div class="actionPane" layout="column" layout-align="space-around start" flex="15">
             <md-button>autoconfig</md-button>
