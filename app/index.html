@@ -5,7 +5,7 @@
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
     <link rel="stylesheet" href="assets/css/app.css"/>
 </head>
-<body class="body" layout="column" ng-controller="app"  layout-margin layout-fill layout-padding>
+<body layout="column" ng-controller="app"  layout-margin layout-fill layout-padding>
     <div class="menu" flex="10">
         <md-toolbar>
             <div layout="row">
@@ -28,8 +28,17 @@
             <md-button>trace</md-button>
         </div>
         <div class="contentPane" flex>
-            <md-content>
-                <md-card>Lorem ipsum dolor sit amet, ne quod novum mei.</md-card>
+            <md-content class="md-padding">
+                <md-card>
+                    <md-list>
+                        <md-item>
+                            Item content in list
+                        </md-item>
+                        <md-item>
+                            Item content in list
+                        </md-item>
+                    </md-list>
+                </md-card>
             </md-content>
         </div>
     </div>
