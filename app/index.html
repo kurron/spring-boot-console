@@ -5,10 +5,30 @@
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
     <link rel="stylesheet" href="assets/css/app.css"/>
 </head>
-<body layout="row" ng-controller="app" class="body" layout-margin layout-fill layout-padding>
-    <div class="leftPane" flex="25">
+<body class="body" layout="column" ng-controller="app"  layout-margin layout-fill layout-padding>
+    <div class="menu" flex="10">
+        <md-tabs>
+            <md-tab label="Tab #1" ></md-tab>
+            <md-tab label="Tab #2"></md-tab>
+            <md-tab label="Tab #3"></md-tab>
+        </md-tabs>
     </div>
-    <div class="rightPane" flex>
+    <div class="content" layout="row" flex>
+        <div class="actionPane" layout="column" flex="25">
+            <md-button>autoconfig</md-button>
+            <md-button>beans</md-button>
+            <md-button>configprops</md-button>
+            <md-button>dump</md-button>
+            <md-button>env</md-button>
+            <md-button>health</md-button>
+            <md-button>info</md-button>
+            <md-button>mappings</md-button>
+            <md-button>metrics</md-button>
+            <md-button>shutdown</md-button>
+            <md-button>trace</md-button>
+        </div>
+        <div class="contentPane" flex>
+        </div>
     </div>
 
 <!-- Angular Material Dependencies -->

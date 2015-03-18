@@ -1,10 +1,16 @@
 .body {
     background-color: red;
 }
-.leftPane {
+.menu {
+    background-color: paleturquoise;
+}
+.content {
+    background-color: peru;
+}
+.actionPane {
     background-color: green;
 }
-.rightPane {
+.contentPane {
     background-color: blue;
 }
 .menuBtn {
