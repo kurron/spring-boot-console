@@ -7,6 +7,16 @@ app.controller('app', ['$scope', '$mdSidenav', function( $scope ){
         context: '/operations',
         username: ' ',
         password: ' ',
-        secure: false
+        secure: false,
+        autoconfig: true,
+        beans: true,
+        configprops: true,
+        dump: true,
+        env: true,
+        health: true,
+        info: true,
+        metrics: true,
+        mappings: true,
+        trace: true
     };
 }]);
