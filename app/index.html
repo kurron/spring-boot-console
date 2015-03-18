@@ -15,24 +15,24 @@
         <md-content class="md-padding" layout="row" layout-align="space-around center">
             <md-input-container>
                 <label>Hostname</label>
-                <input required ng-model="connection.hostname">
+                <input ng-model="connection.hostname" type="text">
             </md-input-container>
             <md-input-container>
                 <label>Port</label>
-                <input required ng-model="connection.port" type="number" step="any" min="80">
+                <input ng-model="connection.port" type="number" step="10" min="80" max="65535">
             </md-input-container>
             <md-input-container>
                 <label>Context</label>
-                <input required ng-model="connection.context">
+                <input ng-model="connection.context" type="text">
             </md-input-container>
             <md-input-container>
                 <label>Username</label>
-                <input ng-model="connection.username">
+                <input ng-model="connection.username" type="text">
                 <md-tooltip>to authenticate</md-tooltip>
             </md-input-container>
             <md-input-container>
                 <label>Password</label>
-                <input ng-model="connection.password">
+                <input type="password" ng-model="connection.password">
                 <md-tooltip>to authenticate</md-tooltip>
             </md-input-container>
             <md-checkbox ng-model="connection.secure">
