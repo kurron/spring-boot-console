@@ -47,7 +47,7 @@
         <md-content class="md-padding" layout="row" layout-align="space-around center">
             <div>
                 <md-checkbox ng-model="connection.autoconfig">
-                    Automatic configuration
+                    Automatic Configuration
                     <md-tooltip>Auto-configuration report</md-tooltip>
                 </md-checkbox>
                 <md-checkbox ng-model="connection.beans">
@@ -71,7 +71,7 @@
                     <md-tooltip>Properties from ConfigurableEnvironment</md-tooltip>
                 </md-checkbox>
                 <md-checkbox ng-model="connection.health">
-                    Health information
+                    Health Information
                     <md-tooltip>Application health information</md-tooltip>
                 </md-checkbox>
             </div>
@@ -87,44 +87,29 @@
             </div>
             <div>
                 <md-checkbox ng-model="connection.mappings">
-                    Resource mappings
+                    Resource Mappings
                     <md-tooltip>All @RequestMapping paths</md-tooltip>
                 </md-checkbox>
                 <md-checkbox ng-model="connection.trace">
                     Trace
-                    <md-tooltip>Trace information</md-tooltip>
+                    <md-tooltip>Trace Information</md-tooltip>
                 </md-checkbox>
             </div>
         </md-content>
     </div>
     <div class="content" layout="row" flex>
-        <div class="actionPane" layout="column" layout-align="space-around start" flex="15">
-            <md-button>autoconfig</md-button>
-            <md-button>beans</md-button>
-            <md-button>configprops</md-button>
-            <md-button>dump</md-button>
-            <md-button>env</md-button>
-            <md-button>health</md-button>
-            <md-button>info</md-button>
-            <md-button>mappings</md-button>
-            <md-button>metrics</md-button>
-            <md-button>shutdown</md-button>
-            <md-button>trace</md-button>
-        </div>
-        <div class="contentPane" flex>
-            <md-content class="md-padding">
-                <md-card>
-                    <md-list>
-                        <md-item>
-                            Item content in list
-                        </md-item>
-                        <md-item>
-                            Item content in list
-                        </md-item>
-                    </md-list>
-                </md-card>
-            </md-content>
-        </div>
+        <md-tabs md-selected="data.selectedIndex">
+            <md-tab>Automatic Configuration</md-tab>
+            <md-tab>Beans</md-tab>
+            <md-tab>Properties</md-tab>
+            <md-tab>Thread Dump</md-tab>
+            <md-tab>Environment</md-tab>
+            <md-tab>Health Information</md-tab>
+            <md-tab>Info</md-tab>
+            <md-tab>Metrics</md-tab>
+            <md-tab>Resource Mappings</md-tab>
+            <md-tab>Trace</md-tab>
+        </md-tabs>
     </div>
 
 <!-- Angular Material Dependencies -->
